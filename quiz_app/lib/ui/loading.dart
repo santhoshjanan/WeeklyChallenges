@@ -12,8 +12,11 @@ class _LoadingState extends State<Loading> {
   void setupQuestions() async{
     QuizQuestions instance = QuizQuestions();
     await instance.getQuestions();
+    Future.delayed(new Duration(seconds: 2),(){
+      Navigator.pushReplacementNamed(context, '/home', arguments: instance.questions);
+    });
 
-    Navigator.pushReplacementNamed(context, '/home', arguments: instance.questions);
+
   }
 
   @override
@@ -24,8 +27,24 @@ class _LoadingState extends State<Loading> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Center(
-            child: Image.asset('assets/loader.gif')
+        body: Column(
+          children: <Widget>[
+            Image.asset('assets/loader.gif'),
+            Text(
+                'Quiz App',
+                style: TextStyle(
+                  fontSize: 32.0
+                )
+            ),
+
+            Text(
+                'loading...',
+                style: TextStyle(
+                  color: Colors.green[900],
+                  fontStyle: FontStyle.italic
+                )
+            )
+          ],
         )
     );
   }
