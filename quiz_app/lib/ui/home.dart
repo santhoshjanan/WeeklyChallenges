@@ -99,13 +99,17 @@ class _HomeState extends State<Home> {
     bool bAnswer3 = questions[qNum].answer[2]["isTrue"];
     bool bAnswer4 = questions[qNum].answer[3]["isTrue"];
     return Scaffold(
+        appBar: AppBar(
+          title: Text('Quiz App'),
+          backgroundColor: Colors.green[700],
+        ),
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Expanded(
-                flex: 5,
+                flex: 3,
                 child: Center(
                   child: Text(
                     currentQuestion,
