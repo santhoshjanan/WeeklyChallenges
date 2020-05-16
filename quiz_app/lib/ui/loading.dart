@@ -28,20 +28,22 @@ class _LoadingState extends State<Loading> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Image.asset('assets/loader.gif'),
             Text(
                 'Quiz App',
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 32.0
                 )
             ),
-
             Text(
                 'loading...',
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.green[900],
-                  fontStyle: FontStyle.italic
+                  fontStyle: FontStyle.italic,
                 )
             )
           ],

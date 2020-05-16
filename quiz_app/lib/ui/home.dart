@@ -192,9 +192,9 @@ class _HomeState extends State<Home> {
                 ),
               ),
             ),
-//            Row(
-//              children: scoreKeeper,
-//            )
+            Row(
+              children: scoreKeeper,
+            )
           ],
         )
     );
