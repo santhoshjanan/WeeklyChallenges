@@ -99,103 +99,105 @@ class _HomeState extends State<Home> {
     bool bAnswer3 = questions[qNum].answer[2]["isTrue"];
     bool bAnswer4 = questions[qNum].answer[3]["isTrue"];
     return Scaffold(
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
-            Expanded(
-              flex: 5,
-              child: Center(
-                child: Text(
-                  currentQuestion,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 25.0,
-                    color: Colors.green[900]
-                  ),
-                ),
-              ),
-            ),
-            Expanded(
-              child: Padding(
-                padding: EdgeInsets.all(4.0),
-                child: FlatButton(
-                  textColor: Colors.white,
-                  color: Colors.green,
+        body: SafeArea(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              Expanded(
+                flex: 5,
+                child: Center(
                   child: Text(
-                    answer1,
+                    currentQuestion,
+                    textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20.0
+                      fontSize: 25.0,
+                      color: Colors.green[900]
                     ),
                   ),
-                  onPressed: (){
-                    checkAnswer(bAnswer1);
-                  },
                 ),
               ),
-            ),
-            Expanded(
-              child: Padding(
-                padding: EdgeInsets.all(4.0),
-                child: FlatButton(
-                  textColor: Colors.white,
-                  color: Colors.green,
-                  child: Text(
-                    answer2,
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20.0
+              Expanded(
+                child: Padding(
+                  padding: EdgeInsets.all(4.0),
+                  child: FlatButton(
+                    textColor: Colors.white,
+                    color: Colors.green,
+                    child: Text(
+                      answer1,
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20.0
+                      ),
                     ),
+                    onPressed: (){
+                      checkAnswer(bAnswer1);
+                    },
                   ),
-                  onPressed: (){
-                    checkAnswer(bAnswer2);
-                  },
                 ),
               ),
-            ),
-            Expanded(
-              child: Padding(
-                padding: EdgeInsets.all(4.0),
-                child: FlatButton(
-                  textColor: Colors.white,
-                  color: Colors.green,
-                  child: Text(
-                    answer3,
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20.0
+              Expanded(
+                child: Padding(
+                  padding: EdgeInsets.all(4.0),
+                  child: FlatButton(
+                    textColor: Colors.white,
+                    color: Colors.green,
+                    child: Text(
+                      answer2,
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20.0
+                      ),
                     ),
+                    onPressed: (){
+                      checkAnswer(bAnswer2);
+                    },
                   ),
-                  onPressed: (){
-                    checkAnswer(bAnswer3);
-                  },
                 ),
               ),
-            ),
-            Expanded(
-              child: Padding(
-                padding: EdgeInsets.all(4.0),
-                child: FlatButton(
-                  textColor: Colors.white,
-                  color: Colors.green,
-                  child: Text(
-                    answer4,
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20.0
+              Expanded(
+                child: Padding(
+                  padding: EdgeInsets.all(4.0),
+                  child: FlatButton(
+                    textColor: Colors.white,
+                    color: Colors.green,
+                    child: Text(
+                      answer3,
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20.0
+                      ),
                     ),
+                    onPressed: (){
+                      checkAnswer(bAnswer3);
+                    },
                   ),
-                  onPressed: (){
-                    checkAnswer(bAnswer4);
-                  },
                 ),
               ),
-            ),
-            Row(
-              children: scoreKeeper,
-            )
-          ],
+              Expanded(
+                child: Padding(
+                  padding: EdgeInsets.all(4.0),
+                  child: FlatButton(
+                    textColor: Colors.white,
+                    color: Colors.green,
+                    child: Text(
+                      answer4,
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20.0
+                      ),
+                    ),
+                    onPressed: (){
+                      checkAnswer(bAnswer4);
+                    },
+                  ),
+                ),
+              ),
+              Row(
+                children: scoreKeeper,
+              )
+            ],
+          ),
         )
     );
   }
