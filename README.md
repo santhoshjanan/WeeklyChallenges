@@ -47,7 +47,8 @@ You will have to make use of this API to be served as an endpoint from where you
 </details>
 
 Screenshots:
-<h3>Download APK(https://github.com/santhoshjanan/WeeklyChallenges/blob/master/quiz_app/QuizApp.apk)</h3>
+<h3>[Download APK](https://github.com/santhoshjanan/WeeklyChallenges/blob/master/quiz_app/QuizApp.apk)</h3>
+
 ![screenshot](https://github.com/santhoshjanan/100daysOfCode/blob/master/screenshots/quiz1.jpg)
 ![screenshot](https://github.com/santhoshjanan/100daysOfCode/blob/master/screenshots/quiz2.jpg)
 ![screenshot](https://github.com/santhoshjanan/100daysOfCode/blob/master/screenshots/quiz3.jpg)
