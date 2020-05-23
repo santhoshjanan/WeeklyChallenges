@@ -45,3 +45,9 @@ You will have to make use of this API to be served as an endpoint from where you
  * [How to do CRUD with Firebase RTDB](https://medium.com/@tattwei46/flutter-how-to-do-crud-with-firebase-rtdb-ce61e3ce53a) 
  * [Github Tutorial](https://www.google.com/amp/s/www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/amp/)
 </details>
+
+Screenshots:
+<h3>Download APK(https://github.com/santhoshjanan/WeeklyChallenges/blob/master/quiz_app/QuizApp.apk)</h3>
+![screenshot](https://github.com/santhoshjanan/100daysOfCode/blob/master/screenshots/quiz1.jpg)
+![screenshot](https://github.com/santhoshjanan/100daysOfCode/blob/master/screenshots/quiz2.jpg)
+![screenshot](https://github.com/santhoshjanan/100daysOfCode/blob/master/screenshots/quiz3.jpg)
